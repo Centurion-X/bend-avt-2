@@ -31,7 +31,7 @@ function renderUsers (usersArray: Array<IUserInfo>): void
     usersArray.forEach(user =>
     {
         const element = document.createElement('div');
-              element.classList.add('center');
+              element.classList.add('styles');
         for (const [key, value] of Object.entries(user))
         {
             const span = document.createElement('span');
