@@ -30,11 +30,15 @@ function renderUsers (usersArray: Array<IUserInfo>): void
 {
     usersArray.forEach(user =>
     {
+        const element = document.createElement('div');
+              element.classList.add('center');
         for (const [key, value] of Object.entries(user))
         {
-            document.write(`${key}: ${value}<br>`);
+            const span = document.createElement('span');
+                  span.textContent = `${key}: ${value}`;
+            element.appendChild(span);
         }
-        document.write('<br>');
+        document.body.appendChild(element);
     });
 }
 
