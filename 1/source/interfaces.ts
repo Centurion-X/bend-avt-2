@@ -18,7 +18,7 @@ export interface IUserInfo extends Pick<IUser, 'gender' | 'name'>
     position: string;
 }
 
-type UserJob =
+interface UserJob
 {
     name: string;
     position: string;
