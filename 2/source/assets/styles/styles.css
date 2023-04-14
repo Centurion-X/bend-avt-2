@@ -1,0 +1,118 @@
+/* Properties */
+:root
+{
+    --font-stack: Helvetica, Arial sans-serif;
+    --footer-background: #313b5e;
+    --footer-height: 10vh;
+    --header-background: #f14e4e;
+    --header-height: 10vh;
+    --modal-background: #e4e9e7;
+    --modal-border: 2px solid grey;
+    --modal-order-background: #88eac0;
+    --modal-text-color: #292d2c;
+    --primary-color: #333;
+    --secondary-color: #fff;
+}
+/*  Main Tags  */
+body
+{
+    font-family: var(--font-stack);
+    height: 100vh; width: 100vw;
+    margin: 0; padding: 0;
+    user-select: none;
+}
+div.modal-element, div.tour-wrap, footer, header
+{
+    align-items: center; justify-content: center;
+    display: flex;
+}
+footer
+{
+    background: var(--footer-background); color: var(--secondary-color);
+    height: var(--footer-height);
+}
+header
+{
+    background: var(--header-background); color: var(--secondary-color);
+    height: var(--header-height);
+}
+/*  Classes etc */
+#accept-order-button
+{
+    cursor: pointer;
+    height: 25px; max-width: 250px;
+    margin: 10px; padding: 5px;
+    text-align: center;
+}
+.main-app-wrap
+{
+    display: flex; flex-direction: column;
+    height: 100%;
+}
+.main-app
+{
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+.main-app .tour-wrap
+{
+    flex-wrap: wrap;
+}
+.main-app .tour-wrap > div
+{
+    border: 1px solid grey;
+    display: flex; flex-direction: column;
+    height: 400px; width: 250px;
+    margin: 5px; padding: 5px;
+}
+.main-app .tour-wrap > div:hover
+{
+    cursor: pointer;
+}
+.main-app .tour-wrap > div > .ticket-description
+{
+    flex: 1;
+    overflow: hidden;
+}
+.main-app .tour-wrap .tour-block > h4
+{
+    height: 50px; width: 250px;
+    overflow: hidden;
+}
+.main-app .tour-wrap .tour-picture
+{
+    height: 150px; width: 100%;
+}
+.modal-element
+{
+    background-color: var(--modal-background); color: var(--modal-text-color);
+    border: var(--modal-border);
+    box-shadow: 1px 1px 1px 2px #d7c7c7;
+    height: 360px; width: 300px;
+    padding: 5px;
+    position: fixed;
+    top: 50%; left: 50%; 
+    transform: translateY(-50%) translateX(-50%);
+}
+.modal-element .close-modal
+{
+    cursor: pointer;
+    font-size: 1.25rem; font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 0; right: 5px; 
+}
+.modal-element .ticket-submit
+{
+    height: 45px;
+}
+.ticket-block
+{
+    border-bottom: 1px solid grey;
+}
+.ticket-info
+{
+    margin: 30px 0;
+}
