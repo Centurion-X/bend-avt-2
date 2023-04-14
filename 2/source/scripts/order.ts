@@ -15,11 +15,12 @@ function initOrderPage(): void
         tourData.then((data: Array<ITour>): void =>
   {
     const id = sessionStorage.getItem('id'),
+          index = data.findIndex(data => data.id == id),
           ticketData: null | Promise<Array<IVipTicket>> = getTicketById(id);
     if (ticketData)
         ticketData.then((data): void => initTicketInfo(data[0]))
     else
-      initTicketInfo(data[id]);
-    initTitle('header', 'h3', data[id].name);
+      initTicketInfo(data[index]);
+    initTitle('header', 'h3', data[index].name);
   });
 }
