@@ -68,14 +68,14 @@ export function initToursElements(data: Array<ITour>): void
         const rootElement: HTMLElement = document.querySelector('.main-app'),
               tourWrap = document.createElement('div');
               tourWrap.classList.add('tour-wrap');
-      initTourElementListener(tourWrap);
-      let rootElementData: string = '';
-      for (let index = 0; index <= 10; index++)
-      {
-        rootElementData += getTourTemplate(data[index], index);
-      }
-      tourWrap.innerHTML = rootElementData;
-      rootElement.appendChild(tourWrap);
+        initTourElementListener(tourWrap);
+        let rootElementData: string = '';
+        for (let index = 0; index < data.length; index++)
+        {
+            rootElementData += getTourTemplate(data[index], index);
+        }
+        tourWrap.innerHTML = rootElementData;
+        rootElement.appendChild(tourWrap);
     }
 }
 
