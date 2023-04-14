@@ -40,7 +40,7 @@ export function postTicketData(postData: TicketType): Promise<{success: boolean}
 // создание массива неповторяющихся элементов
 function setData(data: Array<ITour>): Array<ITour>
 {
-    let tempArray: Array<ITour> = new Array;
+    let tempArray: Array<string> = new Array;
     data = data.filter((item) => tourCheck(item));
     return data;
     function tourCheck(item: any): boolean
