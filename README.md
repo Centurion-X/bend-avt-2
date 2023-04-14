@@ -14,9 +14,10 @@ Home Works
 Testwork №1
 -----------
 
--> 2 / build / index.html, index.js, order.html, order.js,
+-> 2 / build / index.html, index.js, order.html, order.js
 
 +> 2 / build / ocean.jpg, pic1.jpg - pic9.jpg
+
 
 +> 2 / source / assets / images / ocean.jpg, pic1.jpg - pic9.jpg
 
