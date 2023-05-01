@@ -4,6 +4,11 @@ Home Works
 
 Домашнее задание по курсу "FRNT-TS10: Работа со структурами данных на языке TypeScript":
  
+ Exercises
+ ----------
+ 
+ -> 0 / practice_1.ts, practice_2.ts, practice_3.ts, practice_4.ts
+ 
  Homework №1
  -----------
 
